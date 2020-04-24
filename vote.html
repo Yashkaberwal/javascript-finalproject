@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/vote.css">
+        <title>Music::Vote</title>
+        <link rel="icon" type="image/ico" href="images/favicon.ico">
+        <script src="javascript/vote.js"></script>
+    </head>
+    
+    <body>
+        
+        <header class="header">
+            <h1 class="logo"><img src="images/favicon.ico" class="icon"></h1>
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="player.html">Player</a></li>
+                <li><a href="vote.html">Vote</a></li>
+                <li><a href="charts.html">Charts</a></li>
+            </ul>
+        </header>
+        
+        <main>
+            <div id="heading">
+                <h1>Cast Your vote</h1>
+            </div>
+            <div id="panel">
+                <form class="button">
+                   Select Song:
+                    <select name="vote-selector" id="selector" class="selector">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select><br><br>
+                    
+                    <button type="button" class="button" onclick=vote()>VOTE</button><br><br>
+                    <button type="button" class="button"onclick="result()">View Result</button><br><br>
+                </form>
+<!--
+                <div>
+                    <button type="button" onclick="voteCounter()">X</button>
+                    <p id="result1"></p>
+                    <p id="result2"></p>
+                    <p id="result3"></p>
+                </div>
+-->
+            </div>
+        </main>
+        
+        <footer>
+            <p> <strong>&copy; Jaspreet Singh Kaberwal</strong> </p>
+            Javascript Project-
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>
+        </footer>
+    
+    </body>
+
+</html>

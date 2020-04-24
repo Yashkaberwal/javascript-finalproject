@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0;
+	background: #eee;
+	height: auto;
+}
+h1 {
+	font-weight: 400;
+	font-size: 2.5rem;
+	text-transform: uppercase;       
+	margin: 0;
+}
+h2 {
+	font-weight: 400;
+	font-size: 1.2rem;
+	text-transform: capitalize;
+	margin: 0;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+img {
+	display: block;
+	width: 100%;
+}
+main {
+	max-width: 1000px;
+	margin: auto;
+	box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),  -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+#front {
+	background: #fff;
+}
+#front-data {
+	display: flex;
+	flex: 0 1 40vw;
+	height: 50vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+#front-data h2 {
+	color: #888;
+}
+#front-image {
+	background: url('../images/mobile/cover.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 50vh;
+	flex: 0 1 60vw;
+	margin: 0;
+}
+
+#front-image2 {
+	background: url('../images/mobile/coverx.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 120vh;
+	flex: 0 1 60vw;
+	margin: 0;
+}
+
+#front-image3 {
+	background: url('../images/mobile/cover%20v.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	flex: 0 1 60vw;
+	margin: 0;
+}
+.button {
+	padding: 0.5rem 2rem;
+	border: 1px #ccc solid;
+	display: inline-block;
+	margin: 2rem 0 0;
+	border-radius: 50px;
+	text-decoration: none;
+	color: #333;
+	transition: background 500ms ease;
+}
+.button:hover {
+	background: #f4f4f4;
+}
+a:hover {
+	background: #f4f4f4;
+	font-style: bolder;
+    
+}
+a{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: black;
+	text-decoration: none;
+	font-weight: 400;
+}
+#header {
+	padding: 1.5rem;
+	text-align: center;
+	background: #333;
+	color: #fff;
+}
+#header h2 {
+	border-left: dotted 1px #fff;
+	border-right: dotted 1px #fff;
+	display: inline-block;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+.caption {
+	padding: 0.8rem;
+	text-align: center;
+}
+
+.caption2 {
+	padding: 0.5rem;
+	text-align: center;
+	background: #333;
+	color: #fff;
+}
+footer {
+	text-align: center;
+	padding: 2rem 1rem;
+	margin: auto;
+	color: #333;
+}
+footer h3 {
+	font-size: 3rem;
+	margin-bottom: 0;
+}
+
+/*======Top Slider=======*/
+
+.slider-top{
+    background: url(../images/mobile/1.jpg);
+    background-size:cover;
+    animation: slide 30s infinite;
+}
+
+@keyframes slide{
+    25%{
+        background: url(../images/mobile/1.jpg);
+        background-size:cover;
+    }
+    50%{
+        background: url(../images/mobile/2.jpg);
+        background-size:cover;
+    }
+    75%{
+        background: url(../images/mobile/3.jpg);
+        background-size:cover;
+    }
+    100%{
+        background: url(../images/mobile/4.jpg);
+        background-size:cover;
+    }   
+}
+
+/*-----Media Queries (768px)-----*/
+
+@media (min-width: 768px) {
+    
+    #front {
+        display: flex;
+        height: 100%;
+    }
+    
+    #front-data {
+        height: 100vh;
+    }
+    
+    #front-image {
+        height: 100vh;
+    }
+    
+    .header,.main-nav {
+		display: flex;
+	}
+    
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .icon{
+        display: flex;
+    }
+    
+    .iframe-container{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: 0;
+    }
+    
+    .iframe-container iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .slider-container{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: 0;
+    }
+    
+    .slider-top{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .gallery-container{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: 0;
+    }
+    
+    .gallery-item{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*-----Media Queries (1024px)-----*/
+
+@media (min-width: 1024px) {
+.button {
+	padding: 1rem 3rem;
+}
+    
+    .header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+    height: 300px; 
+}
+/*navigation*/
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+
+.logo a,.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/*--------Table---------*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr:nth-of-type(even) {
+  background-color: whitesmoke;
+}
+th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+td, th {
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+td:hover{
+    background-color: lightpink;
+    color:mintcream;
+}
+
+/*Responsive Table*/
+
+@media only screen and (max-width: 760px),(min-device-width: 768px) and (max-device-width: 1024px) {
+    
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    tr { border: 1px solid #ccc; }
+    
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+    
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+    
+    td:nth-of-type(1):before { content: "Company"; font-weight: bold;}
+    td:nth-of-type(2):before { content: "Model"; font-weight: bold;}
+    td:nth-of-type(3):before { content: "Camera(Front)"; font-weight: bold;}
+    td:nth-of-type(4):before { content: "Camera(Rear)"; font-weight: bold;}
+    td:nth-of-type(5):before { content: "Wide Angle"; font-weight: bold;}
+    td:nth-of-type(6):before { content: "Aperture"; font-weight: bold;}
+    td:nth-of-type(7):before { content: "Stabilization"; font-weight: bold;}
+    
+    .table-top{
+        text-align: center
+    }
+    
+    .icon{
+        display:none;
+    }
+    
+    .iframe-container{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: 0;
+    }
+    
+    .iframe-container iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .slider-container{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: 0;
+    }
+    
+    .slider-top{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    gallery-container{
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .caption2 {
+        padding: 0.5rem;
+        text-align: center;
+        background: #333;
+        color: #fff;
+        margin-top: 300px;
+    }
+    
+    .award-container{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: auto; 
+    }
+    
+    .award{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*---------Player Coding-------------*/
+
+
+

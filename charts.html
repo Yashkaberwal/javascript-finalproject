@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="css/main.css">
+<title>Music::Charts</title>
+<link rel="icon" type="image/ico" href="images/favicon.ico">
+<script type="text/javascript" src="javascript/charts.js"></script>
+</head>
+
+    <body onload="tablex()">
+        
+        
+        
+        <header class="header">
+            <h1 class="logo"><img src="images/favicon.ico" class="icon"></h1>
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="player.html">Player</a></li>
+                <li><a href="vote.html">Vote</a></li>
+                <li><a href="charts.html">Charts</a></li>
+            </ul>
+        </header>
+        
+        <main>
+            <table>
+                <thead>     
+                    <tr>
+                        <th>Song</th> 
+                        <th>Total Votes</th>   
+                        
+                    </tr>       
+                </thead>    
+                <tbody>           
+                    <tr>                 
+                        <td>Song 1</td>                
+                        <td id="row1"></td>               
+                        
+                    </tr>           
+                    <tr>                
+                        <td>Song 2</td>                
+                        <td id="row2"></td>               
+                        
+                    </tr> 
+                    <tr>               
+                        <td>Song 3</td>                
+                        <td id="row3"></td>               
+                                   
+                    </tr>
+                </tbody>    
+            </table>
+        </main>
+        
+        <footer>
+            <p> <strong>&copy; Jaspreet Singh Kaberwal</strong> </p>
+            Javascript Project-
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>
+        </footer>
+    
+    </body>
+
+</html>
